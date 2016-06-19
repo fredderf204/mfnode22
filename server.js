@@ -45,11 +45,6 @@ var server = app.listen(app.get('port'), function () {  //http server listen
   var host = server.address().address;
   var port = server.address().port;
 
-//http setup - localhost
-//var server = app.listen(8080, function () {  //http server listen
-  //var host = server.address().address;
-  //var port = server.address().port;
-
 //ouput to console
 console.log('Example app listening at http://%s:%s', host, port);
 console.log('hostname = ' + os.hostname());
