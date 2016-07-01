@@ -3,7 +3,6 @@ var express = require('express');   //define express
 var app = express();                //define app with express
 var path = require('path');         //define path
 var os = require('os');             //define os
-var appInsights = require("applicationinsights");
 
 //get ip addresses
   var interfaces = os.networkInterfaces();
