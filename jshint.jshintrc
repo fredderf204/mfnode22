@@ -2,6 +2,7 @@
   "curly": true,
   "eqeqeq": true,
   "undef": true,
+  "unused": true,
   "globals": {
     "jQuery": true
   }
