@@ -12,7 +12,6 @@
   "author": "michael friedrich",
   "license": "ISC",
   "dependencies": {
-    "applicationinsights": "^0.15.16",
     "ejs": "^2.3.4",
     "express": "^4.13.3",
     "jshint": "^2.9.2"
