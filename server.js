@@ -46,7 +46,7 @@ app.get('/', function (req, res) {
 //set environment variables for azure
 app.set('port', process.env.PORT || 80);
 
-//http setup - azure
+//http setup
 var server = app.listen(app.get('port'), function () {  //http server listen
   var host = server.address().address;
   var port = server.address().port;
