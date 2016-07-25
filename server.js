@@ -30,6 +30,7 @@ app.get('/', function (req, res) {
  var sitename = process.env.WEBSITE_HOSTNAME;
  var region = process.env.REGION_NAME;
  var websku = process.env.WEBSITE_SKU;
+ var localaddr = process.env.LOCAL_ADDR;
 
   res.render('index', { //ejs always looks in the /views folder
     hostname: hostname,
@@ -39,7 +40,8 @@ app.get('/', function (req, res) {
     ipaddresses: ipaddresses,
     sitename: sitename,
     region: region,
-    websku: websku
+    websku: websku,
+    localaddr: localaddr
     });
   });
 
