@@ -114,7 +114,9 @@ fi
 # 3. Grunt
 if [ -e "$DEPLOYMENT_SOURCE/Gruntfile.js" ]; then
   cd "$DEPLOYMENT_SOURCE"
-  ./node_modules/.bin/grunt --no-color clean common dist  
+  eval $NPM_CMD install grunt
+  exitWithMessageOnError "grunt installation failed" 
+  grunt --no-color clean common dist  
   exitWithMessageOnError "grunt failed"  
 fi 
 
