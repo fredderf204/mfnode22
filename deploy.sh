@@ -117,6 +117,10 @@ if [ -e "$DEPLOYMENT_SOURCE/Gruntfile.js" ]; then
   exitWithMessageOnError "grunt-cli installation failed" 
   eval $NPM_CMD install grunt
   exitWithMessageOnError "grunt installation failed" 
+  eval $NPM_CMD install grunt-contrib-jshint
+  exitWithMessageOnError "grunt-contrib-jshint installation failed" 
+  eval $NPM_CMD install grunt-contrib-uglify
+  exitWithMessageOnError "grunt-contrib-uglify installation failed"
   ./node_modules/.bin/grunt --no-color
   exitWithMessageOnError "grunt failed"  
 fi 
