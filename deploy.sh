@@ -113,8 +113,7 @@ fi
 
 # 3. Grunt
 if [ -e "$DEPLOYMENT_SOURCE/Gruntfile.js" ]; then
-  cd "$DEPLOYMENT_SOURCE"
-  grunt --no-color clean common dist  
+  ./node_modules/.bin/grunt --no-color clean common dist  
   exitWithMessageOnError "grunt failed"  
 fi 
 
