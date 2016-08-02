@@ -113,12 +113,8 @@ fi
 
 # 3. Grunt
 if [ -e "$DEPLOYMENT_SOURCE/Gruntfile.js" ]; then
-  cd "$DEPLOYMENT_TARGET"  
-  eval $NPM_CMD install grunt-cli  
-  exitWithMessageOnError "installing grunt-cli failed"
-  eval $NPM_CMD install grunt
-  exitWithMessageOnError "installing grunt failed"
-  grunt --no-color  
+  cd "$DEPLOYMENT_SOURCE"
+  grunt --no-color clean common dist  
   exitWithMessageOnError "grunt failed"  
 fi 
 
