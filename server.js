@@ -27,7 +27,7 @@ app.get('/', function (req, res) {
  var osplatfrom = os.platform();
  var processpid = process.pid;
  var ipaddresses = addresses;
- var sitename = process.env.WEBSITE_SITE_NAME;
+ var sitename = process.env.HTTP_HOST;
  var region = process.env.REGION_NAME;
  var websku = process.env.WEBSITE_SKU;
  var scmtype = process.env.ScmType;
