@@ -31,7 +31,7 @@ app.get('/', function (req, res) {
  var region = process.env.REGION_NAME;
  var websku = process.env.WEBSITE_SKU;
  var scmtype = process.env.ScmType;
- var slotname = process.env.slotname;
+ var slotname = process.env.slotname || 'none';
 
   res.render('index', { //ejs always looks in the /views folder
     hostname: hostname,
