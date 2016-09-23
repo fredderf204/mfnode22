@@ -1,10 +1,11 @@
 # mfnode22
-This is a demo Node Web applcation that can be deployed to an Azure Web App.
+This is a simple little demo Node Web applcation that is built with Node, Express and EJS.
 
-It is built with Node, Express and EJS.
+## Usage
+This demo app has been designed to be deployed to an Azure Web App.
 
-It also allows for a customised deploy through the use of the deploy.sh and .deployment files. This process is descibed here; https://github.com/projectkudu/kudu/wiki/Custom-Deployment-Script.
+## Deployment
+There are multiple ways to deploy your app to Azure App service, and they are covered well here: https://azure.microsoft.com/en-us/documentation/articles/web-sites-deploy/
 
-I have added a step in the deployment to run additonal build tasks through Grunt (other tools can be used i.e. Gulp).
-
+Also some demo deployment examples can be found here: https://github.com/fredderf204/ARMTemplates
 
