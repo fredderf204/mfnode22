@@ -48,7 +48,7 @@ app.get('/', function (req, res) {
   });
 
 //set environment variables for azure
-app.set('port', process.env.PORT || 80);
+app.set('port', process.env.PORT || 8080);
 
 //http setup
 var server = app.listen(app.get('port'), function () {  //http server listen
@@ -63,3 +63,8 @@ console.log('os platfrom = ' + os.platform());
 console.log('ip addres = ' + addresses);
 console.log('process pid = ' + process.pid);
 });
+
+//export modules for testing
+module.exports = {
+    addresses: addresses
+}
