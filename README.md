@@ -7,4 +7,6 @@ This demo app has been designed to be deployed to an Azure Web App.
 ## Deployment
 There are multiple ways to deploy your app to Azure App service, and they are covered well here: https://azure.microsoft.com/en-us/documentation/articles/web-sites-deploy/
 
-Also some demo deployment examples can be found here: https://github.com/fredderf204/ARMTemplate
+Also some demo deployment examples can be found here: https://github.com/fredderf204/
+
+
