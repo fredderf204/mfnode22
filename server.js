@@ -35,7 +35,7 @@ app.get('/', function (req, res) {
 
   res.render('index', { //ejs always looks in the /views folder
     hostname: hostname,
-    ostype: ostype,
+    ostype: ostype, 
     osplatfrom: osplatfrom,
     processpid: processpid,
     ipaddresses: ipaddresses,
@@ -65,6 +65,5 @@ console.log('process pid = ' + process.pid);
 });
 
 //export modules for testing
-module.exports = {
-    addresses: addresses
-}
+module.exports = addresses;
+module.exports = app;
