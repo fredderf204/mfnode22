@@ -4,9 +4,9 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     //mocha for unit tests
-    mochaTest: {
+    UnitTest: {
       test: {
-        src: ['test/mochatest.js']
+        src: ['test/unit.js']
       }
     },
     //code security check
@@ -20,6 +20,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-nsp');
 
   // Default task(s).
-  grunt.registerTask('default', ['mochaTest','nsp']);
+  grunt.registerTask('default', ['UnitTest','nsp']);
 
 };
