@@ -34,7 +34,7 @@ module.exports = function (grunt) {
       all: {
         options: {
           username: 'fred_derf204', // if not provided it'll default to ENV SAUCE_USERNAME (if applicable)
-          key: '035b7b08-9f5c-48ca-92b5-e70539a21ca9', // if not provided it'll default to ENV SAUCE_ACCESS_KEY (if applicable)
+          key: 'xxxx', // if not provided it'll default to ENV SAUCE_ACCESS_KEY (if applicable)
           urls: [
             'http://127.0.0.1:9999/index.html'
           ],
