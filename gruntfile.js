@@ -3,7 +3,7 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    //mocha for unit tests
+    //unit tests
     UnitTest: {
       test: {
         src: ['test/unit.js']
